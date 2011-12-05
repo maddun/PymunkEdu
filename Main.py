@@ -93,7 +93,7 @@ def draw_lines(screen, lines):
         pv2 = body.position + line.b.rotated(body.angle)
         p1 = to_pygame(pv1)
         p2 = to_pygame(pv2)
-        pygame.draw.lines(screen, THECOLORS["lightgray"], False, [p1,p2])
+        pygame.draw.lines(screen, THECOLORS["black"], False, [p1,p2])
 
 def to_pygame(p):
     """Small hack to convert pymunk to pygame coordinates"""
